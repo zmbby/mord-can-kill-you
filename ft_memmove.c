@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zm <marvin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/08/30 22:17:00 by zm               ###   ########.fr       */
+/*   Created: 2024/08/30 21:57:59 by zm                #+#    #+#             */
+/*   Updated: 2024/08/30 22:19:08 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*str;
+	size_t	i;
+	char	swap;
 
-	str = ft_strdup("hello, world!");
-	ft_putstr(str);
-	ft_putstr(" ==> ");
-	ft_memmove(str, str + 7, 7);
-	ft_putstr(str);
-	free(str);
-	return (0);
+	i = 0;
+	while (i < n)
+	{
+		swap = ((char *)src)[i];
+		((char *)dest)[i] = swap;
+		i++;
+	}
+	return (dest);
 }
