@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/05 21:50:21 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/05 22:35:07 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	ft_putnbr(int n);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t dsize);
 char	*ft_strdup(const char *src);
+char    *ft_strcat(char *dest, const char *src);
 
 // void * functions
 

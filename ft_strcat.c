@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/05 22:41:10 by zm               ###   ########.fr       */
+/*   Created: 2024/09/05 22:08:41 by zm                #+#    #+#             */
+/*   Updated: 2024/09/05 22:22:28 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char    *ft_strcat(char *dest, const char *src)
 {
-	char	*src;
-	char	dest[50];
 
-	src = " world!";
-	ft_strcpy(dest, "hello");
-	ft_strcat(dest,src);
-	ft_putstr(dest);
-	return (0);
+    size_t  i;
+    size_t  catsize;
+
+    i = ft_strlen(dest);
+    catsize = i + ft_strlen(src);
+    ft_memcpy(dest + i, src, catsize);
+    *(dest + catsize) = '\0';
+    return (dest);
 }
