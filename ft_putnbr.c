@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/05 21:29:31 by zm               ###   ########.fr       */
+/*   Created: 2024/09/03 21:08:59 by zm                #+#    #+#             */
+/*   Updated: 2024/09/05 21:25:15 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+void	ft_putnbr(int n)
 {
-	int	s1[] = {1,15};
-	int	s2[] = {12,1};
-	size_t size = sizeof(int) * 2;
-	ft_putnbr(ft_memcmp(s1, s2, size));
-	return (0);
+	long	nb;
+
+	nb = n;
+	if (nb < 0)
+	{
+		nb *= -1;
+		ft_putchar('-');
+	}
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		nb = nb % 10;
+	}
+	else if (nb < 10)
+		ft_putchar(nb + 48);
 }

@@ -13,8 +13,8 @@ OBJ:
 	@$(CC) $(files.c) -c
 
 clean:
-	rm -rf *.o
+	@rm -rf *.o
 
 
 norm:
-	norminette -R CheckDefine
+	@norminette -R CheckDefine
