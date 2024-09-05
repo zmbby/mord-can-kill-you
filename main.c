@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/05 21:29:31 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/05 21:48:06 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	main(void)
 {
-	int	s1[] = {1,15};
-	int	s2[] = {12,1};
-	size_t size = sizeof(int) * 2;
-	ft_putnbr(ft_memcmp(s1, s2, size));
+	char	*src;
+	char	dest[3];
+
+	src = "heloo";
+	ft_strncpy(dest, src, 3);
+	ft_putstr(dest);
 	return (0);
 }

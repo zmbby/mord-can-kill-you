@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zm <marvin@42.fr>                          +#+  +:+       +#+        */
+/*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/03 21:17:09 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/05 21:50:21 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 // int functions
 
-int		ft_strlen(char *str);
+int		ft_strlen(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // void functions
@@ -30,8 +30,9 @@ void	ft_putnbr(int n);
 
 // char * functions
 
-char	*ft_strcpy(char *dest, char *src);
-char	*ft_strdup(char *src);
+char	*ft_strcpy(char *dest, const char *src);
+char	*ft_strncpy(char *dest, const char *src, size_t dsize);
+char	*ft_strdup(const char *src);
 
 // void * functions
 
