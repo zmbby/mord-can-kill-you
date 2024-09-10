@@ -6,17 +6,17 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 02:50:39 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 02:53:33 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 21:34:01 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_stpcpy(char *dest, const char *src)
+char	*ft_stpcpy(char *dest, const char *src)
 {
-    char    *p;
+	char	*p;
 
-    p = ft_mempcpy(dest, src, ft_strlen(src));
-    *p = '\0';
-    return (p);
+	p = ft_mempcpy(dest, src, ft_strlen(src));
+	*p = '\0';
+	return (p);
 }

@@ -6,20 +6,20 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 02:42:35 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 02:49:28 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 21:37:25 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strnlen(const char *str, size_t n)
+int	ft_strnlen(const char *str, size_t n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(n-- && str[i])
-    {
-        i++;
-    }
-    return (i);
+	i = 0;
+	while (n-- && str[i])
+	{
+		i++;
+	}
+	return (i);
 }

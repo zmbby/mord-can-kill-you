@@ -6,14 +6,14 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 22:08:41 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 02:56:39 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 21:34:16 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
-    ft_stpcpy(dest, ft_strlen(dest), src);
-    return (dest);
+	ft_stpcpy(dest + ft_strlen(dest), src);
+	return (dest);
 }
