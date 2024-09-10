@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 22:37:40 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 23:43:13 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,12 @@
 int		ft_strlen(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strnlen(const char *str, size_t n);
-int     ft_strlcat(char *dest, const char *src, size_t bsize);
-
+int		ft_strlcat(char *dest, const char *src, size_t bsize);
 
 // void functions 4
 
 void	ft_putchar(char c);
-void	ft_putstr(char *str);
+void	ft_putstr(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	ft_putnbr(int n);
 
@@ -40,6 +39,7 @@ char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t ssize);
 char	*ft_stpcpy(char *dest, const char *src);
 char	*ft_strnul(const char *s);
+char	*ft_strchr(const char *src, int c);
 
 // void * functions 6
 
