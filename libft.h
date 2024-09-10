@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 21:37:53 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 22:37:40 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,13 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-// int functions 3
+// int functions 4
 
 int		ft_strlen(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strnlen(const char *str, size_t n);
+int     ft_strlcat(char *dest, const char *src, size_t bsize);
+
 
 // void functions 4
 

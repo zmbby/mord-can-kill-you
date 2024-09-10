@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 21:38:04 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/10 22:53:00 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,12 @@
 int	main(void)
 {
 	char	src[50];
-	char	*dest;
+	char	dest[50];
 
-	dest = ft_memcpy(src, "hello", 5);
+	ft_strcpy(src, "wolrd!");
+	ft_strcpy(dest, "hello ");
+	ft_putnbr(ft_strlcat(dest,src,8));
+	ft_putchar('\n');
 	ft_putstr(dest);
 	return (0);
 }
