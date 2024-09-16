@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/16 08:49:53 by zm               ###   ########.fr       */
+/*   Created: 2024/09/16 08:19:52 by zm                #+#    #+#             */
+/*   Updated: 2024/09/16 08:50:48 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+char    *ft_strrchr(const char *src, int c)
 {
-	char	src[50];
-	char	dest[50];
+    int flag;
+    int i;
 
-	ft_strcpy(src, "wolrd!");
-	ft_strcpy(dest, "lhello");
-	ft_putstr(ft_strrchr(dest, 'l'));
-	return (0);
+    flag = 0;
+    i = 0;
+    if (c == 0)
+        return ((char *)src + ft_strlen(src));
+    while (src[i])
+        if ((unsigned char)c == src[i++])
+            flag = i - 1;
+    if (flag)
+        return ((char *)src + flag);
+    return (NULL);
 }

@@ -13,7 +13,7 @@ OBJ:
 	@$(CC) $(files.c) -c
 
 clean:
-	@rm -rf *.o
+	@rm -rf *.o main
 
 
 norm:

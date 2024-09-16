@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/10 23:43:13 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/16 08:29:33 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ char	*ft_strncat(char *dest, const char *src, size_t ssize);
 char	*ft_stpcpy(char *dest, const char *src);
 char	*ft_strnul(const char *s);
 char	*ft_strchr(const char *src, int c);
+char    *ft_strrchr(const char *src, int c);
 
 // void * functions 6
 
