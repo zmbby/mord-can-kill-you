@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/17 23:51:27 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/19 16:49:39 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ int		ft_strnlen(const char *str, size_t n);
 int		ft_strlcat(char *dest, const char *src, size_t bsize);
 int     ft_strcmp(const char *s1, const char *s2);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
+int     ft_isspace(const char c);
+int     ft_isdigit(const char c);
+int     ft_atoi(const char *str);
 
 // void functions 4
 
