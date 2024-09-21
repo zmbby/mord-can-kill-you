@@ -6,15 +6,15 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:46:29 by zm                #+#    #+#             */
-/*   Updated: 2024/09/19 16:54:55 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/21 01:38:51 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(const char c)
+int ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
+    if ((unsigned char)c >= '0' && (unsigned char)c <= '9')
         return (1);
     return (0);
 }

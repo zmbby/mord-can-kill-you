@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_ispunct.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 03:47:51 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 02:01:46 by zm               ###   ########.fr       */
+/*   Created: 2024/09/21 01:51:03 by zm                #+#    #+#             */
+/*   Updated: 2024/09/21 01:56:43 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	main(void)
+int ft_ispunct(int c)
 {
-	char	src[20];
-	char	dest[20];
-
-	ft_strcpy(src, "    	-1 23928282828282");
-//	ft_strcpy(dest, "abc!");
-	ft_putnbr(ft_isprint(32));
-	ft_putchar('\n');
-	//ft_putnbr(atoi(src));
-	//ft_putnbr(ft_strncmp(src,dest,0));
-	return (0);
+    if (((unsigned char)c >= '!' && (unsigned char)c <= '/') || ((unsigned char)c >= ':' && (unsigned char)c <= '@') || ((unsigned char)c >= '[' && (unsigned char)c <= '`') || ((unsigned char)c >= '{' && (unsigned char)c <= '~'))
+        return (1);
+    return (0);
 }
