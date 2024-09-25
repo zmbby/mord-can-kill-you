@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 02:09:11 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/25 06:14:35 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void	ft_putchar(char c);
 void	ft_putstr(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	ft_putnbr(int n);
+void    ft_memdel(void **ap);
 
 // char * functions 7
 
@@ -66,5 +67,6 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_mempcpy(void *dest, const void *src, size_t n);
+void    *ft_memalloc(size_t size);
 
 #endif
