@@ -6,15 +6,15 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 02:07:08 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 02:08:33 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/29 17:01:09 by zm               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (ft_isupper(c))
-        return (c + 32);
-    return (c);
+	if (ft_isupper(c))
+		return (c + 32);
+	return (c);
 }
