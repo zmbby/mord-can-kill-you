@@ -6,15 +6,15 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 02:03:45 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 02:06:18 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/29 18:40:10 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (ft_islower(c))
-        return (c - 32);
-    return (c);
+	if (ft_islower(c))
+		return (c - 32);
+	return (c);
 }
