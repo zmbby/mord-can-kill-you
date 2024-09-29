@@ -6,19 +6,19 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:14:29 by zm                #+#    #+#             */
-/*   Updated: 2024/09/25 05:18:23 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/29 18:27:12 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memalloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
-    void    *p;
+	void	*p;
 
-    p = malloc(sizeof(void) * size);
-    if (!p)
-        return (NULL);
-    ft_bzero(p, size);
-    return (p);
+	p = malloc(sizeof(void) * size);
+	if (!p)
+		return (NULL);
+	ft_bzero(p, size);
+	return (p);
 }
