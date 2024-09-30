@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memdel.c                                        :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: zoentifi <zoentifi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 05:34:13 by zm                #+#    #+#             */
-/*   Updated: 2024/09/30 17:54:10 by zoentifi         ###   ########.fr       */
+/*   Created: 2024/09/30 17:19:25 by zoentifi          #+#    #+#             */
+/*   Updated: 2024/09/30 17:45:43 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memdel(void **ap)
+void	ft_strdel(char **as)
 {
-	if (ap)
-	{
-		free(*ap);
-		*ap = NULL;
-	}
+	if (as)
+		ft_memdel((void **)as);
 }

@@ -6,7 +6,7 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:22:42 by zm                #+#    #+#             */
-/*   Updated: 2024/09/25 06:14:35 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/30 18:20:35 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ void	ft_putstr(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	ft_putnbr(int n);
 void	ft_memdel(void **ap);
+void	ft_strdel(char **as);
+void	ft_strclr(char *s);
 
 // char * functions 7
 
@@ -58,6 +60,7 @@ char	*ft_strchr(const char *src, int c);
 char	*ft_strrchr(const char *src, int c);
 char	*ft_strstr(const char *str, const char *needle);
 char	*ft_strnstr(const char *str, const char *needle, size_t len);
+char	*ft_strnew(size_t size);
 
 // void * functions 6
 

@@ -6,7 +6,7 @@
 /*   By: zoentifi <zoentifi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 14:13:55 by zoentifi          #+#    #+#             */
-/*   Updated: 2024/09/30 14:38:09 by zoentifi         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:28:32 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,5 @@ char	*ft_strnew(size_t size)
 	arr = (char *)ft_memalloc(size + 1);
 	if (!arr)
 		return (NULL);
-	ft_memset(arr, 0, size);
-	arr[size + 1] = '\0';
 	return (arr);
 }
