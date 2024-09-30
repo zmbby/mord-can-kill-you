@@ -6,15 +6,15 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 01:27:19 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 01:30:09 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/30 14:07:12 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if (ft_islower(c) || ft_isupper(c))
-        return (1);
-    return (0);
+	if (ft_islower(c) || ft_isupper(c))
+		return (1);
+	return (0);
 }

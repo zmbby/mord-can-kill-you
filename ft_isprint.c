@@ -6,15 +6,15 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 01:57:23 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 01:59:31 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/30 14:05:47 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (ft_isalnum(c) || ft_ispunct(c) || (unsigned char)c == ' ')
-        return (1);
-    return (0);
+	if (ft_isalnum(c) || ft_ispunct(c) || (unsigned char)c == ' ')
+		return (1);
+	return (0);
 }

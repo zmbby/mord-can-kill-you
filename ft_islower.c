@@ -6,13 +6,13 @@
 /*   By: zm <zm@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 01:33:20 by zm                #+#    #+#             */
-/*   Updated: 2024/09/21 01:37:57 by zm               ###   ########.fr       */
+/*   Updated: 2024/09/30 13:57:19 by zoentifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_islower(int c)
+int	ft_islower(int c)
 {
-    if ((unsigned char)c >= 'a' && (unsigned char)c <= 'z')
-        return (1);
-    return (0);
+	if ((unsigned char)c >= 'a' && (unsigned char)c <= 'z')
+		return (1);
+	return (0);
 }
